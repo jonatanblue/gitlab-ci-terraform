@@ -13,5 +13,3 @@ RUN sed -i '/terraform_${TERRAFORM_VERSION}_linux_amd64.zip/!d' terraform_${TERR
 RUN sha256sum -cs terraform_${TERRAFORM_VERSION}_SHA256SUMS
 RUN unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /bin
 RUN rm -f terraform_${TERRAFORM_VERSION}_linux_amd64.zip
-
-ENTRYPOINT ["/bin/bash"]
