@@ -17,6 +17,11 @@ This image removes the entrypoint, allowing the container operator (the Gitlab-C
       script:
         - terraform --version
 
+# Tags
+
+* `jonatanblue/gitlab-ci-terraform:latest` - latest version of terraform
+* `jonatanblue/gitlab-ci-terraform:awscli` - latest terraform + awscli
+
 
 # Builds
 
