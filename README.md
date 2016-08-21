@@ -1,8 +1,8 @@
 # gitlab-ci-terraform
 
-Copied from [hashicorp/docker-hub-images](https://github.com/hashicorp/docker-hub-images), without the standard entrypoint.
+Same as the official  [hashicorp/docker-hub-images](https://github.com/hashicorp/docker-hub-images), but without `ENTRYPOINT`.
 
-Gitlab CI does not let you override the entrypoint, meaning you can't use the official image in your Gitlab-CI builds.
+Gitlab CI [does not let you override `ENTRYPOINT`](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/executors/docker.md#the-entrypoint), meaning you can't use the official terraform image in your Gitlab-CI builds.
 
 This image removes the entrypoint, allowing the container operator (the Gitlab-CI runner) to specify which `CMD` to invoke the container with.
 
